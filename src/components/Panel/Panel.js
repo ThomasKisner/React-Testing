@@ -12,33 +12,33 @@ class Panel extends Component {
         return (
             <div className="component-panel">
                 <div>
-                    <Button name="AC" clickHandler={this.handleClick} />
-                    <Button name="+/-" clickHandler={this.handleClick} />
-                    <Button name="%" clickHandler={this.handleClick} />
-                    <Button name="÷" clickHandler={this.handleClick} orange />
+                    <Button name="AC" className='AC' clickHandler={this.handleClick} />
+                    <Button name="+/-" className='Invert' clickHandler={this.handleClick} />
+                    <Button name="%" className='Percent' clickHandler={this.handleClick} />
+                    <Button name="÷" className='Divide' clickHandler={this.handleClick} orange />
                 </div>
                 <div>
                     <Button name="7" clickHandler={this.handleClick} />
                     <Button name="8" clickHandler={this.handleClick} />
                     <Button name="9" clickHandler={this.handleClick} />
-                    <Button name="x" clickHandler={this.handleClick} orange />
+                    <Button name="x"  className='Multiply'clickHandler={this.handleClick} orange />
                 </div>
                 <div>
                     <Button name="4" clickHandler={this.handleClick} />
                     <Button name="5" clickHandler={this.handleClick} />
                     <Button name="6" clickHandler={this.handleClick} />
-                    <Button name="-" clickHandler={this.handleClick} orange />
+                    <Button name="-" className='Subtract' clickHandler={this.handleClick} orange />
                 </div>
                 <div>
                     <Button name="1" clickHandler={this.handleClick} />
                     <Button name="2" clickHandler={this.handleClick} />
                     <Button name="3" clickHandler={this.handleClick} />
-                    <Button name="+" clickHandler={this.handleClick} orange />
+                    <Button name="+" className='Add' clickHandler={this.handleClick} orange />
                 </div>
                 <div>
                     <Button name="0" clickHandler={this.handleClick} wide />
                     <Button name="." clickHandler={this.handleClick} />
-                    <Button name="=" clickHandler={this.handleClick} orange />
+                    <Button name="=" className='Sum' clickHandler={this.handleClick} orange />
                 </div>
             </div>
         );

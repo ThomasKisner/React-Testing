@@ -12,4 +12,15 @@ describe('<Panel />', () => {
     const div = document.createElement('div');
     ReactDOM.render(<Panel />, div);
   });
-});
+
+  it('Should add named value to state on click', ()=> {
+    const wrapper = shallow(<Panel/>);
+    const instance= wrapper.instance();
+  
+    const button = wrapper.find('button.AC');
+  
+    button.simulate('click');
+    expected(instance.state.total).toBe(0); 
+  
+  });
+})
